@@ -16,8 +16,8 @@ export default class InputHandler {
       paddle.moveLeft();
     })
 
-    document.getElementById("clickStop").addEventListener('click', () => {
-      paddle.stop();
+    document.getElementById("clickJump").addEventListener('click', () => {
+      paddle.jump();
     })
 
     document.getElementById("clickRight").addEventListener('click', () => {
