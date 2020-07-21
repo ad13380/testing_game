@@ -24,21 +24,21 @@ export default class InputHandler {
       paddle.moveRight();
     })
 
-    document.addEventListener('keyup', (event) => {
-      //alert(event.keyCode);
-      switch(event.keyCode) {
-        case 37:
-          // only stop when you release the key corresponding to the curretn direction of travel
-          if (paddle.speed < 0) {
-            paddle.stop();
-          }
-          break;
-        case 39:
-          if (paddle.speed > 0) {
-            paddle.stop();
-          }
-          break;
-      }
-    })
+    // document.addEventListener('keyup', (event) => {
+    //   //alert(event.keyCode);
+    //   switch(event.keyCode) {
+    //     case 37:
+    //       // only stop when you release the key corresponding to the curretn direction of travel
+    //       if (paddle.speed < 0) {
+    //         paddle.stop();
+    //       }
+    //       break;
+    //     case 39:
+    //       if (paddle.speed > 0) {
+    //         paddle.stop();
+    //       }
+    //       break;
+    //   }
+    // })
   }
 }
